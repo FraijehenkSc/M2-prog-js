@@ -60,7 +60,15 @@ class App
         g.fill();
 
         g.beginPath();
-        g.fillStyle = "aquamarine"
+        let randomgGetal = Math.random();
+        if (randomgGetal  < 0.5)
+        {
+            g.fillStyle = "yellow";
+        }
+        else if (randomgGetal > 0.5)
+        {
+            g.fillStyle = "black";
+        }
         g.moveTo(25.2,36.9);
         g.lineTo(53,43.4);
         g.lineTo(52.5,55.2);
@@ -87,6 +95,10 @@ class App
         g.stroke();
         g.fill();
 
+
+        
+      
+
         
 
 
@@ -101,7 +113,24 @@ class App
         
        
 
-        console.log(canvas);
+        console.log(canvas)
+
+       //let title = document.getElementById("newstitle")
+       //let randomggetal = Math.random()
+
+       //if (randomggetal == 0);
+       //{
+       // title.style.backgroundColor ="#00FF00";
+       //}
+
+       // else if (randomggetal < 0.2)
+       //{
+        //title.style.backgroundColor ="#00FF00";
+       //}
+       //else if (randomggetal )
+       //{
+        //title.style.backgroundColor ="#00FF00";
+       //}
         
 
     }
