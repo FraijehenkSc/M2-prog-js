@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="module" defer src="app.js"></script>
+    </head>
+    <body>
+        <canvas id="canvasId" width="100" height="100"
+            style="background-color: white">
+
+        </canvas>
+        <script type="text/javascript">
+            function getMousePosition(canvas, event) {
+                let rect = canvas.getBoundingClientRect();
+                let x = event.clientX - rect.left;
+                let y = event.clientY - rect.top;
+                console.log("Coordinate x: " + x, 
+                            "Coordinate y: " + y);
+            }
+          
+            let canvasElem = document.querySelector("canvas");
+              
+            canvasElem.addEventListener("mousedown", function(e)
+            {
+                getMousePosition(canvasElem, e);
+            });
+        </script>
+
+        <p id="newstitle">Het nieuws</p>
+        <p class="gamenews headline">Mario kart 9 komt er eindelijk aan!</p>
+        <p class="gamenews">from software werkt aan een nieuw project</p>
+    </body>
+</html>

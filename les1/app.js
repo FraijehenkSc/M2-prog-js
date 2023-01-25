@@ -1,27 +1,24 @@
 class App
-
 {
-    runApplication()
-    {
-        let appNaam = "TestApp"
-        let versienummer = "0.9 double"
-        let versiedatum = "22-11-2022"
-        let autheur = "Nino"
-        let copyright = "Nino inc."
-        let distributeur = "Nino" 
-        let darkmode = true
-        
-        console.log("appNaam: ",appNaam)
-        console.log("versienummer: ",versienummer)
-        console.log("versiedatum: ",versiedatum)
-        console.log("autheur: ",autheur)
-        console.log("copyright: ",copyright)
-        console.log("distributeur: ",distributeur)
-        console.log("darkmode: ",darkmode)
-        
+    runApplication()
+    {
+        let appNaam = "Nino"
+        let versienummer = (0,9)
+        const d = new Date
+        let autheur = ("Nino")
+        let copyright = ("Nino")
+        let distributeur = ("nino")
+        let darkmode = (false)
 
-    }
+        console.log(appNaam)
+        console.log(versienummer)
+        console.log(new Date)
+        console.log(autheur)
+        console.log(copyright)
+        console.log(distributeur)
+        console.log(darkmode)
+
+    }
 }
-
-let app = new App()
-app.runApplication()
+let app = new App();
+app.runApplication();
